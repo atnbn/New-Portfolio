@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    background: #141d2f;
+    padding: 10px;
+    overflow-x: hidden;
+    position: sticky;
+    backdrop-filter: blur(32.5px);
+    top: 0px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+
+    &:hover {
+        color: var(--orange);
+    }
+    &:active {
+        border-bottom: 1px solid var(--orange);
+    }
+}
+
+.logo-name {
+    color: #fff;
+    font-size: 18px;
+}
+
+.responsiv-navbar {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: #141d2f;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+@media (max-width: 800px) {
+    .navbar {
+        display: none;
+    }
+}

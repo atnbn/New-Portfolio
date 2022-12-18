@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+    --orange: #fa7902;
+}
+html {
+    overflow-x: hidden;
+}
+body {
+    overflow-x: none;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    background: #141d2f;
+    position: relative;
+}
+
+.d-none {
+    display: none;
+}
+
+.responsiv-icon {
+    height: 22px;
+}

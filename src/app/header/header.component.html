@@ -1,21 +1,28 @@
 <header>
-  <div class="title">
-    <span class="logo-name">Bünyami</span
-    ><span style="color: #e86f00; font-size: 18px" class="">n</span>
+  <div class="header__content">
+    <div class="title">
+      <span class="logo-name">Bünyami</span
+      ><span style="color: #e86f00; font-size: 18px" class="">n</span>
+    </div>
+    <nav class="navbar d-none">
+      <a (click)="scrollService.scrollTo('greeting')">Home</a>
+      <a (click)="scrollService.scrollTo('about-me')">About me</a>
+      <a (click)="scrollService.scrollTo('skills')">Skills</a>
+      <a (click)="navigateToOtherComponent('projects')">Portfolio</a>
+    </nav>
+
+    <img
+      class="responsiv-icon"
+      src="../assets/images/header/responsiv-menu.png"
+    />
   </div>
-  <nav class="navbar d-none">
+</header>
+
+<div class="dropdown-menu">
+  <div class="responsiv-nav">
+    <a href="#greetings">Home</a>
     <a href="#aboutme">About me</a>
     <a href="#skills">Skills</a>
     <a href="#portfolio">Portfolio</a>
-  </nav>
-
-  <img class="responsiv-icon" src="../assets/images/header/burger menu.svg" />
-
-  <!-- <div class="responsiv-navbar">
-    <div class="responsiv-nav">
-      <a href="#aboutme">About me</a>
-      <a href="#skills">Skills</a>
-      <a href="#portfolio">Portfolio</a>
-    </div>
-  </div> -->
-</header>
+  </div>
+</div>
